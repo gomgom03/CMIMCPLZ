@@ -4,7 +4,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static("public"))
 
-const port = 3000
+const port = process.env.PORT;
 let server = app.listen(port, () => {
     console.log("listening");
 })
